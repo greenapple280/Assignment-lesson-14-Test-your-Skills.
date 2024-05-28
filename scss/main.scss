@@ -1,0 +1,47 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.first-page {
+    //background-image: url("../images/bg1.png");
+    background-image: url(../images/bg1.png);
+    background-position: top left;
+    height: 820px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__text {
+        margin-bottom: 3rem;
+    }
+    &__form {
+        display: flex;
+        margin-bottom: 7rem;
+    }
+    &__input {
+        padding: 18px 113px;
+        max-width: 35rem;
+    }
+    &__btn {
+        width: 153px;
+        height: 63px;
+        padding: 20px 30px 16px 30px;
+        background-color: $accent-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+        border: 3px solid $main-color;
+        color: $main-color;
+        font-family: "Aleo", serif;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+}
+.fa-solid {
+    color: $main-color;
+    width: 22px;
+    height: 24px;
+    margin-bottom: -7px;
+}
