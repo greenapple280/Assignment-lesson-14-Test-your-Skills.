@@ -155,6 +155,7 @@
 
 .goods1 {
     background-image: url("../images/bg3.png");
+    background-repeat: no-repeat;
     &__inner {
         padding: 14.3rem 0 6.25rem 20.6rem;
     }
@@ -176,6 +177,7 @@
 
 .goods2 {
     background-image: url("../images/bg4.png");
+    background-repeat: no-repeat;
     &__inner {
         padding: 14.3rem 20.6rem 6.25rem 56rem;
     }
@@ -192,5 +194,54 @@
     }
     &__text {
         margin-bottom: 3rem;
+    }
+}
+
+.review {
+    background-image: url(../images/bg5.png);
+    background-repeat: no-repeat;
+    &__inner {
+        padding: 8rem 0 12rem 0;
+    }
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 5.8rem;
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__review {
+        max-width: 42rem;
+        padding: 3rem 1.5rem 2.5rem 4rem;
+    }
+    &__author {
+        margin-bottom: 0.5rem;
+    }
+}
+.fa-quote-left {
+    color: $accent-color;
+}
+
+.footer {
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+    &__inner {
+        padding: 7.6rem 0 3.3rem;
+    }
+    &__logo-text {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    &__text {
+        margin-bottom: 1.25rem;
+    }
+    &__social-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 }

@@ -518,6 +518,7 @@ input {
 
 .goods1 {
   background-image: url("../images/bg3.png");
+  background-repeat: no-repeat;
 }
 .goods1__inner {
   padding: 14.3rem 0 6.25rem 20.6rem;
@@ -539,6 +540,7 @@ input {
 
 .goods2 {
   background-image: url("../images/bg4.png");
+  background-repeat: no-repeat;
 }
 .goods2__inner {
   padding: 14.3rem 20.6rem 6.25rem 56rem;
@@ -556,4 +558,69 @@ input {
 }
 .goods2__text {
   margin-bottom: 3rem;
+}
+
+.review {
+  background-image: url(../images/bg5.png);
+  background-repeat: no-repeat;
+}
+.review__inner {
+  padding: 8rem 0 12rem 0;
+}
+.review__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5.8rem;
+}
+.review__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.review__review {
+  max-width: 42rem;
+  padding: 3rem 1.5rem 2.5rem 4rem;
+}
+.review__author {
+  margin-bottom: 0.5rem;
+}
+
+.fa-quote-left {
+  color: #5474FD;
+}
+
+.footer {
+  background-color: #232323;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer__inner {
+  padding: 7.6rem 0 3.3rem;
+}
+.footer__logo-text {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.footer__text {
+  margin-bottom: 1.25rem;
+}
+.footer__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
