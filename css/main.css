@@ -84,6 +84,10 @@ body {
   min-width: 320px;
 }
 
+a {
+  color: #FFFFFF;
+}
+
 input {
   border: none;
 }
@@ -129,7 +133,7 @@ input {
       -ms-flex-align: center;
           align-items: center;
 }
-.first-page_top__text {
+.first-page_top__scroll {
   margin-bottom: 3rem;
 }
 .first-page_top__text-1 {
@@ -144,11 +148,20 @@ input {
 .first-page_top__input {
   padding: 18px 113px;
   max-width: 35rem;
+  -webkit-box-flex: 75%;
+      -ms-flex: 75%;
+          flex: 75%;
+}
+.first-page_top__arrow-down {
+  text-align: center;
 }
 .first-page_top__btn {
   width: 153px;
   height: 63px;
-  padding: 20px 30px 16px 30px;
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  padding: 20px 52px 16px 30px;
   background-color: #5474FD;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,6 +178,17 @@ input {
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
+  position: relative;
+}
+.first-page_top__btn::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 24px;
+  top: 1rem;
+  right: 1rem;
+  background-image: url(../images/search.svg);
+  background-repeat: no-repeat;
 }
 
 .btn-search_img {
@@ -521,7 +545,7 @@ input {
   background-repeat: no-repeat;
 }
 .goods1__inner {
-  padding: 14.3rem 0 6.25rem 20.6rem;
+  padding: 14.2rem 0 6.2rem 20.6rem;
 }
 .goods1__content {
   max-width: 34rem;
@@ -543,7 +567,7 @@ input {
   background-repeat: no-repeat;
 }
 .goods2__inner {
-  padding: 14.3rem 20.6rem 6.25rem 56rem;
+  padding: 14.2rem 0 6.2rem 56rem;
 }
 .goods2__content {
   max-width: 34rem;
@@ -565,12 +589,12 @@ input {
   background-repeat: no-repeat;
 }
 .review__inner {
-  padding: 8rem 0 12rem 0;
+  padding: 8rem 0 12.5rem 0;
 }
 .review__title {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 5.8rem;
+  margin-bottom: 5.6rem;
 }
 .review__content {
   display: -webkit-box;
@@ -623,4 +647,13 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 320px) {
+  .first-page_top__btn,
+  first-page_top__input {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
 }

@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    &__text {
+    &__scroll {
         margin-bottom: 3rem;
     }
     &__text-1 {
@@ -31,11 +31,16 @@
     &__input {
         padding: 18px 113px;
         max-width: 35rem;
+        flex: 75%;
     }
-    &__btn {
+    &__arrow-down {
+        text-align: center;
+    }
+    &__btn { 
         width: 153px;
         height: 63px;
-        padding: 20px 30px 16px 30px;
+        flex: 25%;
+        padding: 20px 52px 16px 30px;
         background-color: $accent-color;
         display: flex;
         align-items: center;
@@ -46,6 +51,17 @@
         font-size: 14px;
         text-transform: uppercase;
         cursor: pointer;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 22px;
+            height: 24px;
+            top: 1rem;
+            right: 1rem;
+            background-image: url(../images/search.svg);
+            background-repeat: no-repeat;
+        }
     }
 }
 .btn-search_img {
@@ -157,7 +173,7 @@
     background-image: url("../images/bg3.png");
     background-repeat: no-repeat;
     &__inner {
-        padding: 14.3rem 0 6.25rem 20.6rem;
+        padding: 14.2rem 0 6.2rem 20.6rem;
     }
     &__content {
         max-width: 34rem;
@@ -179,7 +195,7 @@
     background-image: url("../images/bg4.png");
     background-repeat: no-repeat;
     &__inner {
-        padding: 14.3rem 20.6rem 6.25rem 56rem;
+        padding: 14.2rem 0 6.2rem 56rem;
     }
     &__content {
         max-width: 34rem;
@@ -201,12 +217,12 @@
     background-image: url(../images/bg5.png);
     background-repeat: no-repeat;
     &__inner {
-        padding: 8rem 0 12rem 0;
+        padding: 8rem 0 12.5rem 0;
     }
     &__title {
         text-align: center;
         text-transform: uppercase;
-        margin-bottom: 5.8rem;
+        margin-bottom: 5.6rem;
     }
     &__content {
         display: flex;
@@ -245,3 +261,10 @@
         align-items: center;
     }
 }
+
+@media (max-width: 320px) {
+    .first-page_top__btn,
+    first-page_top__input {
+        flex: 100%;
+    }
+  }
