@@ -160,7 +160,28 @@
     }
     &__content {
         max-width: 34rem;
-        background-color: rgba(35, 35, 35, 0.8);
+        background-color: rgba(35, 35, 35, 0.85);
+        padding: 3rem 2rem;
+    }
+    &__country {
+        margin-bottom: 1.5rem;
+    }
+    &__place {
+        margin-bottom: 0.8rem;
+    }
+    &__text {
+        margin-bottom: 3rem;
+    }
+}
+
+.goods2 {
+    background-image: url("../images/bg4.png");
+    &__inner {
+        padding: 14.3rem 20.6rem 6.25rem 56rem;
+    }
+    &__content {
+        max-width: 34rem;
+        background-color: rgba(35, 35, 35, 0.9);
         padding: 3rem 2rem;
     }
     &__country {

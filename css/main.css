@@ -524,7 +524,7 @@ input {
 }
 .goods1__content {
   max-width: 34rem;
-  background-color: rgba(35, 35, 35, 0.8);
+  background-color: rgba(35, 35, 35, 0.85);
   padding: 3rem 2rem;
 }
 .goods1__country {
@@ -534,5 +534,26 @@ input {
   margin-bottom: 0.8rem;
 }
 .goods1__text {
+  margin-bottom: 3rem;
+}
+
+.goods2 {
+  background-image: url("../images/bg4.png");
+}
+.goods2__inner {
+  padding: 14.3rem 20.6rem 6.25rem 56rem;
+}
+.goods2__content {
+  max-width: 34rem;
+  background-color: rgba(35, 35, 35, 0.9);
+  padding: 3rem 2rem;
+}
+.goods2__country {
+  margin-bottom: 1.5rem;
+}
+.goods2__place {
+  margin-bottom: 0.8rem;
+}
+.goods2__text {
   margin-bottom: 3rem;
 }
