@@ -3,16 +3,25 @@
 @import 'reset';
 @import 'global';
 
-.first-page {
-    //background-image: url("../images/bg1.png");
+
+.header {
     background-image: url(../images/bg1.png);
+    background-repeat: no-repeat;
     background-position: top left;
-    height: 820px;
+}
+
+.first-page_top {
+    //background-image: url("../images/bg1.png");
+    min-height: 100vh;
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     &__text {
+        margin-bottom: 3rem;
+    }
+    &__text-1 {
         margin-bottom: 3rem;
     }
     &__form {
@@ -37,6 +46,7 @@
         font-family: "Aleo", serif;
         font-size: 14px;
         text-transform: uppercase;
+        cursor: pointer;
     }
 }
 .fa-solid {
@@ -44,4 +54,74 @@
     width: 22px;
     height: 24px;
     margin-bottom: -7px;
+}
+
+.first-page_botton {
+    background-color: $accent-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 19rem;
+    height: 80px;
+}
+
+.nav {
+    &__list {
+    display: flex;
+    gap: 40px;
+    }
+    &__items {
+        text-transform: uppercase;
+    }
+}
+
+.about {
+    background-image: url(../images/bg2.png);
+    background-repeat: no-repeat;
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 7.5rem 10px;
+        gap: 7rem;
+    }
+    &__content {
+        max-width: 560px;
+    }
+    &__title {
+        margin-bottom: 3rem;
+    }
+    &__text {
+        margin-bottom: 3rem;
+    }
+    &__btn {
+        width: 14rem;
+        height: 63px;
+        background-color: $accent-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        color: $main-color;
+        font-family: "Aleo", serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    &__images {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-template-rows: repeat(10, 10%);
+        gap: 10px;
+    }
+    &__img1 {
+        grid-row: 1 / span 4;
+        grid-column: 1 / span 5;
+    }
+    &__img2 {
+        grid-row: 5 / span 4;
+        grid-column: 2 / span 5;
+    }
 }
