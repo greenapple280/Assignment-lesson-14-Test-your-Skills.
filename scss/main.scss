@@ -39,8 +39,7 @@
         background-color: $accent-color;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: center;
         border: 3px solid $main-color;
         color: $main-color;
         font-family: "Aleo", serif;
@@ -49,11 +48,8 @@
         cursor: pointer;
     }
 }
-.fa-solid {
+.btn-search_img {
     color: $main-color;
-    width: 22px;
-    height: 24px;
-    margin-bottom: -7px;
 }
 
 .first-page_botton {
@@ -83,7 +79,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 7.5rem 10px;
+        padding: 6rem 10px;
         gap: 7rem;
     }
     &__content {
@@ -123,5 +119,57 @@
     &__img2 {
         grid-row: 5 / span 4;
         grid-column: 2 / span 5;
+    }
+}
+
+.steps {
+    background-color: #333333;
+    &__inner {
+        padding: 5rem 0;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 3.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.fa-magnifying-glass, .fa-check, .fa-thumbs-up {
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    text-align: center;
+}
+.search-img, .fa-thumbs-up {
+    color: $accent-color;
+}
+
+.fa-check {
+    color: #FF6363;
+}
+
+.goods1 {
+    background-image: url("../images/bg3.png");
+    &__inner {
+        padding: 14.3rem 0 6.25rem 20.6rem;
+    }
+    &__content {
+        max-width: 34rem;
+        background-color: rgba(35, 35, 35, 0.8);
+        padding: 3rem 2rem;
+    }
+    &__country {
+        margin-bottom: 1.5rem;
+    }
+    &__place {
+        margin-bottom: 0.8rem;
+    }
+    &__text {
+        margin-bottom: 3rem;
     }
 }

@@ -63,6 +63,10 @@ ul, li {
   list-style-type: none;
 }
 
+i {
+  display: inline-block;
+}
+
 html,
 body {
   height: 100%;
@@ -152,10 +156,9 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 3px solid #FFFFFF;
   color: #FFFFFF;
   font-family: "Aleo", serif;
@@ -164,11 +167,8 @@ input {
   cursor: pointer;
 }
 
-.fa-solid {
+.btn-search_img {
   color: #FFFFFF;
-  width: 22px;
-  height: 24px;
-  margin-bottom: -7px;
 }
 
 .first-page_botton {
@@ -211,7 +211,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 7.5rem 10px;
+  padding: 6rem 10px;
   gap: 7rem;
 }
 .about__content {
@@ -468,4 +468,71 @@ input {
   -ms-grid-column: 2;
   -ms-grid-column-span: 5;
   grid-column: 2/span 5;
+}
+
+.steps {
+  background-color: #333333;
+}
+.steps__inner {
+  padding: 5rem 0;
+}
+.steps__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.steps__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 3.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fa-magnifying-glass, .fa-check, .fa-thumbs-up {
+  width: 65px;
+  height: 65px;
+  display: inline-block;
+  text-align: center;
+}
+
+.search-img, .fa-thumbs-up {
+  color: #5474FD;
+}
+
+.fa-check {
+  color: #FF6363;
+}
+
+.goods1 {
+  background-image: url("../images/bg3.png");
+}
+.goods1__inner {
+  padding: 14.3rem 0 6.25rem 20.6rem;
+}
+.goods1__content {
+  max-width: 34rem;
+  background-color: rgba(35, 35, 35, 0.8);
+  padding: 3rem 2rem;
+}
+.goods1__country {
+  margin-bottom: 1.5rem;
+}
+.goods1__place {
+  margin-bottom: 0.8rem;
+}
+.goods1__text {
+  margin-bottom: 3rem;
 }
